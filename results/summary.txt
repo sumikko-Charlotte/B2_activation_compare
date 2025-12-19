@@ -1,0 +1,4 @@
+ReLU: val_acc=0.9850, final_train_loss=0.0715, final_val_loss=0.0310
+Sigmoid: val_acc=0.9050, final_train_loss=0.2997, final_val_loss=0.2204
+Tanh: val_acc=0.9900, final_train_loss=0.0814, final_val_loss=0.0364
+Identity: val_acc=0.9200, final_train_loss=0.3061, final_val_loss=0.2099
