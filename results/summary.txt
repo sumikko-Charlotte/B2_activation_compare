@@ -1,4 +1,23 @@
-ReLU: val_acc=0.9850, final_train_loss=0.0715, final_val_loss=0.0310
-Sigmoid: val_acc=0.9050, final_train_loss=0.2997, final_val_loss=0.2204
-Tanh: val_acc=0.9900, final_train_loss=0.0814, final_val_loss=0.0364
-Identity: val_acc=0.9200, final_train_loss=0.3061, final_val_loss=0.2099
+============================================================
+MLP激活函数对比实验 - 结果汇总
+============================================================
+数据集: make_moons (n_samples=1000, noise=0.2)
+模型结构: MLP(2 -> 32 -> 32 -> 2)
+训练轮数: 200 epochs
+学习率: 0.01
+随机种子: [42, 43, 44]
+
+结果 (均值±标准差，基于3次独立运行):
+------------------------------------------------------------
+ReLU       (relu      ): 准确率=0.9800±0.0041, 训练Loss=0.0824±0.0211, 验证Loss=0.0783±0.0426
+Tanh       (tanh      ): 准确率=0.9800±0.0071, 训练Loss=0.0747±0.0100, 验证Loss=0.0661±0.0213
+Identity   (identity  ): 准确率=0.8850±0.0255, 训练Loss=0.2960±0.0088, 验证Loss=0.2642±0.0400
+Sigmoid    (logistic  ): 准确率=0.8750±0.0212, 训练Loss=0.2943±0.0102, 验证Loss=0.2694±0.0355
+
+============================================================
+生成的文件:
+  - results/loss_curves.png (Loss曲线对比)
+  - results/decision_boundaries.png (决策边界可视化)
+  - results/summary.txt (本文件)
+  - results/summary.csv (CSV格式结果)
+============================================================
